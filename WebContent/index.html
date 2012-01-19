@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 10px;
+	background: none repeat scroll 0 0 #E5EBEE;
+	color: #000000;
+    font-family: 'Trebuchet MS',Verdana,Helvetica,Arial,sans-serif;
+    font-size: 83.33%;
+}
+h1, h2, h3, h4 {
+    display: block;
+    font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
+    font-weight: bold;
+}
+.inlineBlock {
+	display: inline-block;
+}
+#pageContainer {
+	margin: auto;
+    max-width: 85em;
+    min-width: 60em;
+}
+#page {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #C6D4DE;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+}
+header {
+	background: none repeat scroll 0 0 #FFFFFF;
+    color: #332211;
+    height: 7em;
+    position: relative;
+	border-bottom: 1px solid #C6D4DE;
+}
+#logo {
+	position: absolute;
+    right: 25px;
+    top: 25px;
+	width: 248px;
+	height: 48px;
+	background-image: url("img/uulm.gif");
+}
+header h1 {
+	border: medium none;
+    color: #91ACBC;
+    font-size: 108%;
+    font-weight: normal;
+    left: 2em;
+    padding-left: 0;
+    padding-top: 0;
+    position: absolute;
+    text-decoration: none;
+    top: 2em;
+}
+header label {
+	display: block;
+	font-size: 80%;
+	color: #91ACBC;
+}
+header input {
+	padding: 2px;
+	width: 100px;
+	font-size: 80%;
+}
+#submit {
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	padding: 1px 5px;
+	color: #fff;
+	background-color: #91ACBC;
+	cursor: pointer;
+}
+nav {
+	left: 1.4em;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 4.3em;
+}
+
+
+#main {
+	background-color: #fff;
+	min-height: 500px;
+}
+
+#main .werbung {
+	width: 60%;
+}
+
+#register {
+	width: 40%;
+	float: right;
+}
+#register h2 {
+	padding: 20px;
+	font-size: 200%;
+	color: #91ACBC;
+}
+#register label {
+	float: left;
+	color: #91ACBC;
+	text-align: right;
+	display: inline-Block;
+	padding: 4px;
+	width: 100px;
+}
+#register input {
+	font-size: 120%;
+	padding: 5px;
+	margin: 5px;
+}
+#register #submit {
+	font-size: 120%;
+	padding: 5px;
+	margin-left: 113px;
+	margin-top: 20px;
+}
+</style>
+</head>
+<body>
+<div id="pageContainer">
+	<div id="page">
+		<header>
+			<div id="logo"></div>
+			<h1> Willkommen auf der Jobb&ouml;rse</h1>
+			<nav>
+			<div id="login">	
+				<form name="login">
+					<div class="inlineBlock">
+						<label class="email" for="email">Email:</label>
+						<input id="email" type="text" name="email" autofocus="autofocus">
+					</div>
+					<div class="inlineBlock">
+						<label class="email" for="email">Passwort:</label>
+						<input id="pw" type="password" name="pw">
+					</div>
+					<div class="inlineBlock" id="submit">login</div>
+				</form>
+			</div>
+			</nav>
+		</header>
+		<div id="main">
+			<div class="werbung">
+				<!--
+				<h2>Connect with friends faster, wherever you are.</h2>
+
+				<h3>The Jobb&ouml;rse application is now available on 2500+ phones.</h3>
+
+				Faster, smoother browsing
+				Works with your phone's camera and contacts
+				No periodic updates — just 1 easy download
+				-->
+			</div>
+			<div id="register">
+				<form name="register">
+					<h2>Registrieren:</h2>
+					<div class="vorname">
+						<label for="vorname">Vorname:</label>
+						<input type="text" id="vorname" name="vorname">
+					</div>
+						<div class="name">
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name">
+					</div>
+					<div class="email">
+						<label for="email">Email:</label>
+						<input type="text" id="email" name="email">
+					</div>
+					<div class="email2">
+						<label for="email2">Email best&auml;tigen:</label>
+						<input type="text" id="email2" name="email2">
+					</div>
+					<div class="passwort">
+						<label class="passwort" for="passwort">Passwort:</label>
+						<input type="password" id="passwort" name="passwort">
+					</div>
+					<div class="passwort2">
+						<label class="passwort2" for="passwort2">Passwort best&auml;tigen:</label>
+						<input type="password" id="passwort2" name="passwort2">
+					</div>
+					<div id="submit">registrieren</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
